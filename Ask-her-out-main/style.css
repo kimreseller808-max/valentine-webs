@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcbfbf;
+  padding: 20px; /* extra space for mobile */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  max-width: 500px;
+  width: 100%; /* ensures container adapts to smaller screens */
+  padding: 20px;
+  background-color: #ffdede; /* optional: slight contrast for content */
+  border-radius: 12px; /* optional: rounded edges */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.container .tenor-gif-embed {
+  max-width: 300px; /* slightly bigger for better visibility */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.container .btn {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* keeps buttons from overflowing on small screens */
+}
+
+.btn a {
+  text-decoration: none;
+  color: #111;
+  background: #f5b6b6;
+  padding: 10px 25px;
+  border-radius: 8px;
+  box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0.5rem 1.5rem 3.5rem rgba(0, 0, 0, 0.4);
+}
